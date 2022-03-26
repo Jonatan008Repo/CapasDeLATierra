@@ -1,0 +1,359 @@
+body{
+	margin:0;padding:0;
+}
+.inicio {
+	background-color: white;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	width: 0%;
+	padding: 12px;
+	border-radius: 5px;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 53%;
+	margin-left: 0px;
+	margin-top: 0px;
+	overflow: hidden;
+	opacity: 0;
+	z-index: 99999;
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	transform: scale(.9);
+}
+.bm.iniciar {
+	cursor:pointer;
+	min-height:1em;
+	outline: none;
+	border: none;
+	background: #2F8856 none;
+	color: white;
+	margin-top: 5px;
+	padding: 5px 0;
+	font-weight: bold;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+	box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease, background 0.1s ease;
+	transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+	will-change: '';
+	-webkit-tap-highlight-color: transparent;
+	font-size: 1.5em;
+}
+.bgtrans{
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: block;
+	opacity: 0;
+	z-index: 10000;
+}
+.wwB{
+	width:5% !important;
+	margin-bottom:1.5%	!important;
+}
+.capa{	
+	position:relative;
+	/* background-color:#0000D9; */
+}
+.capas{	
+	width: 100%; 
+}
+.capa .capas-w{
+	position:absolute; 
+	width: 100%;
+	height:100%;
+}
+.inf-capas
+{
+	position:absolute;
+	width:100%;
+	margin-bottom:10px;
+	/* margin-left:2.5%;		 */
+	/* border: 2px solid red;  */
+	/* margin-top:10px; */
+	/* background-color:rgba(0;0;217;0.3); */
+	/* height:1360px;	 */
+}
+a .titleS{
+	/* position:absolute; */
+	width:13%;
+	height:8%;	
+	z-index:10;	
+	margin-bottom: 4.5%;
+	background-image:url("../img/Various_01.png");
+	background-Size:100% 100%;
+	background-repeat:no-repeat; 
+	/*background-color:#2693FF; 
+		border-radius:20px;	
+	bottom:40%;*/	
+}
+.selectB{
+	/* border: 2px solid #00FF00; */
+    border-radius: 29px;
+	background-color:#24B6CD
+}
+.capa .capas-f{
+	position: fixed;
+	width:100%;
+	top:0px;
+	/*z-index:2000;*/
+	/*background-color:#008C00;*/
+}
+.capa .capas-f .box-inf
+{
+	position:absolute;	
+	display:none;
+	background-color:rgba(255,255,255,0.5);
+	border-top-left-radius:20px;
+	border-bottom-left-radius:20px;
+	width:77%;
+	top:40%;
+	margin-left: 19%;
+	padding:2%;
+	text-align: center;
+}
+.capa .capas-f .box-inf p
+{
+	font-size:15px;
+	font-family:arial;
+	color:#000000;
+}
+.inf-capas img
+{
+	position:absolute;
+	width:50%;	
+}
+
+
+@-webkit-keyframes arre {
+	0% { 
+	background-position: 0% 0;}
+	100% { 
+		background-position: 100% 0; 
+	}
+}
+@keyframes arre {
+	0% { 
+		background-position: 0% 0;
+	}
+	100% { 
+		background-position: 100% 0; 
+	}
+}
+
+#output {
+	width: 768px;
+	height: 1984px;
+}
+#buffer {
+	display: none;
+}
+#canvas_output {	
+	z-index: 10;
+	display: block;
+	width: 768px;									
+}
+.efecto
+{
+	
+	margin-left: 20%;
+	animation: flotando 10s ease-in-out infinite;	
+	-webkit-animation: flotando 10s ease-in-out infinite;  
+}
+
+/* Chrome; Safari; Opera */
+@-webkit-keyframes flotando {
+	0%   {top:10px;}
+	
+	50%  { top:80px;}
+	
+	100% { top:10px;}
+}
+
+/* Standard syntax */
+@keyframes flotando {
+	0%   {top:10px;}
+	
+	50%  { top:80px;}
+	
+	100% { top:10px;}
+}
+.efecto2
+{	
+	animation: flotando2 10s ease-in-out infinite;	
+	-webkit-animation: flotando2 10s ease-in-out infinite;
+}
+/* Chrome; Safari; Opera */
+@-webkit-keyframes flotando2 {
+	0%   {left:50%;}
+	
+	50%  { left:40%;}
+	
+	100% { left:50%;}
+}
+/* Standard syntax */
+@keyframes flotando2 {
+	0%   {left:50%;}
+	
+	50%  { left:40%;}
+	
+	100% { left:50%;}
+}
+
+.efecto3
+{	
+	position:absolute;
+	height:30%;
+	top:-200px;
+	width:100%;
+	background-image:url("../img/elementos/transbordador.png");
+	background-repeat: no-repeat;
+	background-Size: 46%80%;
+	background-position:30%100%;
+	animation: flotando3 5s linear infinite;	
+	-webkit-animation: flotando3 5s linear infinite; 
+	/* Chrome; Safari; Opera */
+}
+@-webkit-keyframes flotando3 {
+	0%   {
+		top:-200px;
+		background-position:190%70%;
+	} 
+	100% {	
+		top:-350px;
+		background-position:-90%20%;
+	}
+}
+/* Standard syntax */
+@keyframes flotando3 {
+	0%   {
+		top:-200px;
+		background-position:190%70%;
+	} 
+	100% {	
+		top:-350px;
+		background-position:-90%20%;
+	}
+}
+
+
+.efecto4
+{	
+	position:absolute;
+	height:18%;
+	top:44%;%;
+	width:100%;
+	background-image:url("../img/elementos/avion-comecial.png");
+	background-repeat: no-repeat;
+	background-Size: 46%80%;
+	background-position:30%100%;
+	animation: flotando4 6s linear infinite;	
+	-webkit-animation: flotando4 6s linear infinite; 
+}
+/* Chrome; Safari; Opera */
+@-webkit-keyframes flotando4 {
+	0%   {
+		top:50%;
+		background-position:190%70%;
+	} 
+	50%{
+		top:40%;
+	}
+	100% {	
+		top:50%;
+		background-position:-90%20%;
+	}
+}
+/* Standard syntax */
+@keyframes flotando4 {
+	0%   {
+		top:50%;
+		background-position:190%70%;
+	} 
+	50%{
+		top:40%;
+	}
+	100% {	
+		top:50%;
+		background-position:-90%20%;
+	}
+}
+.efecto5
+{	
+	animation: flotando5 10s ease-in-out infinite;	
+	-webkit-animation: flotando5 10s ease-in-out infinite;  
+}
+
+/* Chrome; Safari; Opera */
+@-webkit-keyframes flotando5 {
+	0%{	bottom:-181px;
+	}	
+	50%{ 	bottom:-105px;
+	}	
+	100%{ bottom:-181px;
+	}
+}
+/* Standard syntax */
+@keyframes flotando5 {
+	0%{	bottom:-181px;
+	}	
+	50%{ 	bottom:-105px;
+	}	
+	100%{ bottom:-181px;
+	}
+}
+.efecto6
+{	
+	position:absolute;
+	height:38%;
+	top:30%;
+	width:100%;
+	background-image:url("../img/elementos/avionsupersonico.png");
+	background-repeat: no-repeat;
+	background-Size: 30%100%;
+	background-position:30%100%;
+	animation: flotando6 4s ease-in-out infinite;	
+	-webkit-animation: flotando6 4s ease-in-out infinite; 
+}
+/* Chrome; Safari; Opera */
+@-webkit-keyframes flotando6 {
+	0%   {
+		top:30%;
+		background-position:190%70%;
+	} 
+	50%{
+		top:20%;
+	}
+	100% {	
+		top:30%;
+		background-position:-90%20%;
+	}
+}
+/* Standard syntax */
+@keyframes flotando6 {
+	0%   {
+		top:30%;
+		background-position:190%70%;
+	} 
+	50%{
+		top:20%;
+	}
+	100% {	
+		top:30%;
+		background-position:-90%20%;
+	}
+}					
+
+@media only screen and (orientation: landscape) {
+	.titleS{
+		width:5% !important;
+		margin-bottom:1.5%	!important;
+	}
+}					

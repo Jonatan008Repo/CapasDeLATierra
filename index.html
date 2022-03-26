@@ -1,0 +1,276 @@
+<html>
+	<head>
+		<meta http-equiv='Content-type' content='text/html,charset=utf-8' />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />		
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+		<link rel='stylesheet' type='text/css' href='css/style.css' />
+		<title>CAPAS DE LA TIERRA</title>
+	</head>
+	<body>
+		<div class="inicio">
+			<div class="bm iniciar">Iniciar</div>
+		</div>
+		<div class="capa">		
+			<div class="capas-w">
+			</div>
+			<div id="cell1" class="inf-capas">					
+				<img  class="efecto" src="img/elementos/telescopio_hubble.png" alt="telescopio_hubble" style="width:25%;"/>
+				<img class="efecto2" src="img/elementos/satelite.png" alt="satelite" style="left: 46%;TOP:30%;"/>				
+			</div>
+			<div id="cell2" class="inf-capas" >				
+				<div  class="efecto3"></div>					
+			</div>	
+			<div id="cell3" class="inf-capas">				
+			<img src="img/elementos/meteorito.png" style="left:20%;bottom:30%"/></div>			
+			<div id="cell4" class="inf-capas" >				
+				<img src="img/elementos/capa-de-ozono.png" alt="capa-de-ozono"  style="width:100%;bottom:0px;"/>
+				<img src="img/elementos/estelaestrellafugaz.png" alt="estelaestrellafugaz"  style="TOP: 25%;LEFT: 30%;" />	
+				<div class="efecto6"></div>
+				<img  class="efecto5" src="img/elementos/globometeorologico.png" alt="globometeorologico" style="width: 30%;    left: 10%;bottom:-181px;"/>
+			</div>	
+			<div id="cell5" class="inf-capas">
+				<div class="efecto4"></div>
+				<img src="img/elementos/nubes.png" alt="nubes" style="width:100%;top:50%"/>
+			</div>	
+			<div id="cell6" class="inf-capas">					
+			</div>
+			<div id="cell7" class="inf-capas" >
+			</div>	
+			<div id="cell8" class="inf-capas">				
+			</div>	
+			<div id="cell9" class="inf-capas">				
+			</div>					
+			<img class="capas"src="img/tierra.jpg" alt="capas" />	
+			<div class="capas-f">
+				<a href="#cell1">
+					<div class="titleS" data-num="1">								
+					</div>
+				</a>
+				<a href="#cell2">
+					<div class="titleS" data-num="2">						
+					</div>
+				</a>
+				<a href="#cell3">
+					<div class="titleS" data-num="3">						
+					</div>	
+				</a>
+				<a href="#cell4">
+					<div class="titleS" data-num="4">						
+					</div>	
+				</a>
+				<a href="#cell5">
+					<div class="titleS"  data-num="5">						
+					</div>
+				</a>
+				<a href="#cell6">
+					<div class="titleS"  data-num="6">						
+					</div>
+				</a>
+				<a href="#cell7">
+					<div class="titleS" data-num="7">						
+					</div>
+				</a>				
+				<a href="#cell8">
+					<div class="titleS" data-num="8">					
+					</div>
+				</a>
+				<a href="#cell9">
+					<div class="titleS" data-num="9">						
+					</div>
+				</a>				
+				<div id="cellinf1"class="box-inf" >
+					<h1>EXÓSFERA</h1>				
+					<p>
+						TEMPERATURAS DE HASTA 5000° C Y UNA ALTURA DE 1000 KM.
+					</p>
+				</div>
+				<div id="cellinf2"class="box-inf">
+					<h1>TERMÓSFERA</h1>
+					<p>
+						ZONA DE ALTAS TEMPERATURAS ENTRE 1000°C Y 1500° CON ALTURA DE 120 KM.
+					</p>
+				</div>
+				<div id="cellinf3"class="box-inf">
+					<h1>MESÓSFERA</h1>
+					<p>
+						LA MESOSFERA ALCANZA UNA ALTITUD APROXIMADA DE 80 KM Y UNA TEMPERATURA DE -100° C.
+					</p>
+				</div>
+				<div id="cellinf4"class="box-inf">
+					<h1>ESTRATÓSFERA</h1>
+					<p>
+						ALTITUD APROXIMADA DE 45 KM Y CON UNA TEMPERATURA DE 0° C A 17° C.
+					</p>
+				</div>
+				<div id="cellinf5"class="box-inf">
+					<h1>TROPÓSFERA</h1>
+					<p>
+						CAPA GASEOSA CON UNA ALTURA DE 20 KM Y UNA TEMPERATURA DE 15° C.
+					</p>
+				</div>
+				<div id="cellinf6"class="box-inf">
+					<h1>CORTEZA</h1>
+					<p>
+						LA CORTEZA TIENE UN GROSOR  ENTRE 11KM EN LAS DORSALES OCEÁNICAS Y 70 KM EN LAS GRANDES CORDILLERAS.
+					</p>
+				</div>
+				<div id="cellinf7"class="box-inf">
+					<h1>MANTO</h1>
+					<p>
+						ROCA DE SILICIO, MAGNESIO Y HIERRO, TEMPERATURA 600° C.
+					</p>
+				</div>
+				<div id="cellinf8"class="box-inf">
+					<h1>NÚCLEO EXTERNO</h1>
+					<p>
+						HIERRO, NÍQUEL Y OXIGENO LIQUIDO.
+					</p>
+				</div>
+				<div id="cellinf9"class="box-inf">
+					<h1>NÚCLEO INTERNO</h1>
+					<p>
+						HIERRO, NÍQUEL MACIZOS 
+						TEMPERATURA 4500 C°
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- <audio ></audio> -->
+		<script type="text/javascript">
+			<!-- [1587;793;793;786;786;300;1747;873.5;873.5] ; -->
+			distanciaCapa =[18.57226448,9.280280866,9.280280866,9.280280866,9.280280866,3.510825044,20.44470451,10.22235225,10.22235225];
+			var ww = $(window).width();
+			var wh = $(window).height();	
+			var ww2 = $(document).width();
+			var wh2 = $(document).height();	
+			
+			var heightW=$("body").innerHeight();
+			var widthW=$("body").outerWidth();
+			var heightWimg=$(".capas").innerHeight();
+			var heightWimgU=(heightWimg/9);		
+			var numO;
+			var flag = false;
+			var audio = {};
+			audio= new Audio();
+			console.log("1: "+ww+" "+wh);
+			console.log("1.1: "+ww2+" "+wh2);
+			console.log("2: "+screen.width + " " + screen.height );		
+			console.log("3: "+heightW);				
+			console.log("4: "+widthW);		
+			console.log("5: "+heightWimg+" /9 = "+heightWimgU);	
+			
+			var rep=false;
+			
+			console.log("primer fadeOut");
+			$(".box-inf").fadeOut();
+			$(document).ready(function(){	
+				
+				$(".capa").hide();				
+				$(".inicio").animate({
+					width:"80%",
+					opacity: 1,
+					"margin-top":"-8%",
+					"margin-left":"-43%"
+					},100, function(){
+					$("body").addClass("bgtrans").animate({
+						opacity:1
+						}, 1000, function(){
+						$(".iniciar").click(function(){
+							$(".inicio").fadeOut(1200);
+							$("body").removeClass("bgtrans");
+							$(".capa").fadeIn(1500);
+							$(window).scrollTop(7000);
+							medidas();								
+							$(window).resize(function()
+							{								
+								medidas();
+							});				
+						});
+					});
+				});				
+			});
+			$(window).resize();
+			$('a[href*=#]:not([href=#])').click(function() {
+				<!-- console.log($(this).children().attr("data-num")); -->
+				$(".titleS").removeClass("selectB");
+				if(numO==$(this).children().attr("data-num")){
+					<!-- rep=false; -->
+					audio.pause();
+					numO=10;
+				}
+				else{
+					numO =	$(this).children().attr("data-num");
+					boton=$(this).children();	
+					audio.src = "audio/audio"+numO+".mp3";
+					rep=true;
+					audio.load();
+					audio.play();
+				}
+				
+				
+				
+				console.log("segundo fadeOut");
+				if($("#cellinf"+numO).is(":visible")){
+					$(".box-inf:nth-child("+numO+")").fadeOut();
+				}
+				boton.addClass("selectB")			
+				<!-- console.log(numO); -->
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {	
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						
+						$('html,body').animate(
+						{scrollTop: target.offset().top}, 
+						1000, 
+						"swing",
+						function(){
+							flag=true;
+							console.log("true:"+flag);							
+							$('html,body').stop(function(){							
+								console.log("primer fadeIn");
+							});							
+							$("#cellinf"+numO).fadeToggle();			
+							flag=false;
+							console.log(flag);
+						});
+						
+					}
+				}
+			});
+			function medidas(){
+				var i;
+				var heightinf=0;	
+				var ww = $(window).width();
+				var wh = $(window).height();	
+				var ww2 = $(document).width();
+				var wh2 = $(document).height();	
+				
+				<!-- cadena="1:"+ww+" "+wh+" 1.1: "+ww2+" "+wh2+" 2: "+screen.width + " "+ screen.height ;
+				<!-- $(".texto").text(cadena); --> -->
+				
+				if(ww== screen.height){
+					
+					$(".capas-f").css("height",screen.width);
+				}
+				else{
+					$(".capas-f").css("height",screen.height);
+				}
+				console.log($(".capas-f").height());
+				$(".box-inf").fadeOut();
+				$(".titleS").removeClass("selectB");
+				for(i=1;i<10;i++){						
+					$("#cell"+i).css({"height":distanciaCapa[i-1]+"%","top":heightinf+"px"});			
+					heightinf=heightinf+$("#cell"+i).innerHeight();  				
+				}	
+			}
+			$(window).scroll(function(){
+				console.log(flag);
+				if(flag==false){ 
+					console.log("tercer fadeOut");
+					$(".box-inf").fadeOut();
+				}		 
+			});
+		</script>
+	</body>
+</html>
